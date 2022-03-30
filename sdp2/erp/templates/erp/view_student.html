@@ -1,0 +1,9 @@
+{% extends 'erp/base.html' %}
+{% block content %}
+<h3>Registered Students Are</h3>
+{% for s in students %}
+<b>Register ID: </b> {{ s.regid }} <br>
+<b>Name: </b> {{ s.name }} <br>
+<b>Department: </b> {{ s.dept }} <br>
+{% endfor %}
+{% endblock %}
